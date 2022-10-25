@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "001.Memory", "001.Memory\001.Memory.csproj", "{21ED6F02-26E5-4547-9F7B-4DCBBA136AC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "002.Json", "002.Json\002.Json.csproj", "{99306E4E-EB3D-4BA0-B70D-4F99009F9356}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "005.Xml", "005.Xml\005.Xml.csproj", "{E24EF5F9-8356-4440-8D2A-0CC6EE8F8286}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21ED6F02-26E5-4547-9F7B-4DCBBA136AC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21ED6F02-26E5-4547-9F7B-4DCBBA136AC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21ED6F02-26E5-4547-9F7B-4DCBBA136AC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21ED6F02-26E5-4547-9F7B-4DCBBA136AC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99306E4E-EB3D-4BA0-B70D-4F99009F9356}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99306E4E-EB3D-4BA0-B70D-4F99009F9356}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99306E4E-EB3D-4BA0-B70D-4F99009F9356}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99306E4E-EB3D-4BA0-B70D-4F99009F9356}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E24EF5F9-8356-4440-8D2A-0CC6EE8F8286}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E24EF5F9-8356-4440-8D2A-0CC6EE8F8286}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E24EF5F9-8356-4440-8D2A-0CC6EE8F8286}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E24EF5F9-8356-4440-8D2A-0CC6EE8F8286}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {79974EDD-8DC7-47B3-8F5C-BE47D8809438}
+	EndGlobalSection
+EndGlobal
