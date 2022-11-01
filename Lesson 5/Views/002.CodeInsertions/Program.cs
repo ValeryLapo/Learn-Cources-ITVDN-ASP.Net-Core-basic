@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace _001.StaticFiles
+namespace _002.CodeInsertions
 {
     public class Program
     {

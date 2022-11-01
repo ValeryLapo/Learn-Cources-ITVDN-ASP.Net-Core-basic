@@ -1,0 +1,19 @@
+﻿@using _001.Routes.Models
+@model List<PlainModel>
+<!doctype html>
+<html>
+<head>
+    <link href="~/style.css"  rel="stylesheet" />
+    <title>IT Companies</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+</head>
+<body>
+@foreach (var element in Model)
+{
+    <h1>@element.Company</h1>
+    <h2>Employees: @element.Employees</h2>
+    <h2>Total Salary: @(element.Salary * element.Employees)</h2>
+}   
+</body>
+</html>

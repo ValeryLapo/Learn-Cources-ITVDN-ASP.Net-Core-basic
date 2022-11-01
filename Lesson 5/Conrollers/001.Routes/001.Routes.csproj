@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>_001.StaticFi.es</RootNamespace>
+    <RootNamespace>_001.Routes</RootNamespace>
   </PropertyGroup>
 
 </Project>

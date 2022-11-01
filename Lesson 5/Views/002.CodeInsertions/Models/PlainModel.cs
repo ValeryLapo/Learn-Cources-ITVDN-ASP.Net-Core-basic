@@ -1,4 +1,4 @@
-﻿namespace _001.StaticFiles.Models
+﻿namespace _002.CodeInsertions.Models
 {
     public class PlainModel
     {
