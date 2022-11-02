@@ -1,0 +1,32 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>User registation</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+<form method="post" action="~/Home/ProceedResult">
+    @for (int i = 0; i < 3; i++)
+    {
+        <div class="user">
+            <h3>User № @(i+1)</h3>
+            <p>
+                <label>Name:</label><br/>
+                <input type="text" name="users[@i].Name"/><br/>
+            </p>
+            <p>
+                <label>Surname:</label><br/>
+                    <input type="text" name="users[@i].Surname" /><br />
+            </p>
+            <p>
+                <label>Age:</label><br/>
+                    <input type="number" name="users[@i].Age" /><br />
+            </p>
+        </div>
+    }
+    <input type="submit" name="Register All"/><br/>
+</form>
+</body>
+</html>
+
