@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>_001.Constuctions</RootNamespace>
+    <RootNamespace>_002.Dependency</RootNamespace>
   </PropertyGroup>
 
 </Project>

@@ -1,20 +1,123 @@
 ﻿<!doctype html>
 <html>
 <head>
-	<title>Razor code examples</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=deivce-width" />
+    <title>Razor code examples</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=deivce-width" />
 </head>
 <body>
-	@*Simple c#-insertions*@
-	<p>Date: @DateTime.Now.ToLongDateString()</p>
+    @*Simple c#-insertions*@
+@*	<p>Date: @DateTime.Now.ToLongDateString()</p>
 
-	<p>@(2 + 2)</p>
+    <p>@(2 + 2)</p>
 
-	<p>@(2 + 2)</p>
-	<p>
+    <p>@(2 + 2)</p>
 
-	</p>	
+    <p>@@DateTime.Now = @DateTime.Now.ToLongDateString()</p>*@
+    
+    @*More complex c#-insertions*@
+@*	@{
+        string text = "Hello, dear user!";
+        text = text + " And welcome to pur Web Site!";
+    }
+    
+    <h2>@text</h2>*@
+    
+    @*Conditional constructions*@
+  @*  @{
+        string content = "Hello, dead user!";
+        content = content + " And welcome to our Web Site!";
+        bool isEnabled = false;
+    }
+    
+    @if (isEnabled)
+    {
+        <p>@content</p>
+    }
+    else
+    {
+        <p>The greeting ig forbidden. We are sorry about it.</p>
+    }
+    
+    @{
+        int variable = 0;
+    }
+    @switch (variable)
+    {
+        case 0:
+            <p>@variable</p>
+            break;
+        case 1:
+            <p>@(variable + variable)</p>
+            break;
+		default:
+		    <p>@(variable*variable)</p>
+		    break;
+    }*@
 
+    @*Cycles*@
+    @for (var i = 0; i < 5; i++)
+   {
+       <p>@i</p>
+   }
+    
+    @{
+	    int variable2 = 0;
+	}
+
+	@while (variable2 <= 10)
+	{
+		<p>@variable2</p>
+		variable2++;
+	}
+
+	@{
+		int variable3 = 0;
+	}
+
+	@do
+	{
+		<p>@variable3</p>
+		variable3++;
+	}
+	while (variable3 < 10);
+	<P>Finished!</P>
+
+	@{
+		string[] names = { "Valera", "Tanya", "Natasha", "Victor" };
+	}
+    <ul>
+	    @foreach (var name in names)
+	    {
+		    <li>@name</li>
+	    }
+    </ul>
+    
+    @*Try-catch-finally*@
+    @*@try
+    {
+        throw new InvalidOperationException("Something got wrong...");
+    }
+    catch (Exception ex)
+    {
+        <p>Exception message: @ex.Message</p>
+    }
+    finally
+    {
+        <p>Final operation</p>
+    }*@
+    
+    @*Functions*@
+     @functions
+    {
+        public int GetFactorial(int n)
+        {
+            int result = 1;
+            for (int i = 1; i <= n; i++)
+                result *= i;
+            return result;
+        }
+     }
+    <div>Factorial of number 10 is: @GetFactorial(4)</div>
 </body>
 </html>
