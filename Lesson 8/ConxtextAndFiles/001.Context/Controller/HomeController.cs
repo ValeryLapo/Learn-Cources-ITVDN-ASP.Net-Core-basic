@@ -4,14 +4,14 @@
     {
         public string Index()
         {
-            var elements = Request.Headers;
-            string result = "";
-            foreach (var element in elements)
-            {
-                result += $"{element.Key} = {element.Value} \n";
-            }
+            //var elements = Request.Method;
+            //string result = "";
+            //foreach (var element in elements)
+            //{
+            //    result += $"{element.Key} = {element.Value} \n";
+            //}
 
-            return result;
+            return Request.Method;
         }
     }
 }
