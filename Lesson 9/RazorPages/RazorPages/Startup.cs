@@ -9,11 +9,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 
-namespace _001.WebAPI
+namespace RazorPages
 {
     public class Startup
     {
-        public IConfiguration Configuration { get; }
+        private IConfiguration Configuration { get; }
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -22,7 +22,7 @@ namespace _001.WebAPI
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc(p=>p.EnableEndpointRouting=false);
+            services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -34,9 +34,9 @@ namespace _001.WebAPI
             }
 
             app.UseStaticFiles();
-            app.UseMvc();
-            //app.UseRouting();
+            app.UseRouting();
 
+            app.UseEndpoints(e => e.MapControllerRoute("default","{controller}/{action=Index}/{id?}"));
         }
     }
 }
